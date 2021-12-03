@@ -7,6 +7,8 @@ namespace IdentityServer4.NHibernate.Mappings.Stores.Configuration
     {
         public ApiResourceClaimMap()
         {
+            Table("openid_api_resource_claim");
+
             Id(p => p.ID);
 
             Property(p => p.Type, map => 

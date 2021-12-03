@@ -8,6 +8,8 @@ namespace IdentityServer4.NHibernate.Mappings.Stores.Operational
     {
         public DeviceFlowCodesMap()
         {
+            Table("openid_device_flow_codes");
+
             Id(p => p.ID, map =>
             {
                 map.Column("UserCode");

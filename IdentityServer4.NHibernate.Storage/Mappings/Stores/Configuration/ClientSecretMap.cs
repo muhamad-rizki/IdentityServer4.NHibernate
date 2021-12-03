@@ -7,6 +7,8 @@ namespace IdentityServer4.NHibernate.Mappings.Stores.Configuration
     {
         public ClientSecretMap()
         {
+            Table("openid_client_secret");
+
             Id(p => p.ID);
 
             Property(p => p.Description, map => map.Length(2000));

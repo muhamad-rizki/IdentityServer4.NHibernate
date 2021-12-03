@@ -7,6 +7,8 @@ namespace IdentityServer4.NHibernate.Mappings.Stores.Configuration
     {
         public ClientPropertyMap()
         {
+            Table("openid_client_property");
+
             Id(p => p.ID);
 
             Property(p => p.Key, map => 

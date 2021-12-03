@@ -7,6 +7,8 @@ namespace IdentityServer4.NHibernate.Mappings.Stores.Configuration
     {
         public ClientScopeMap()
         {
+            Table("openid_client_scope");
+
             Id(p => p.ID);
 
             Property(p => p.Scope, map => 

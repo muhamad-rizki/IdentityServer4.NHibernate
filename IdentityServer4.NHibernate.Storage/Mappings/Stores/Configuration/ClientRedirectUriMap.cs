@@ -7,6 +7,8 @@ namespace IdentityServer4.NHibernate.Mappings.Stores.Configuration
     {
         public ClientRedirectUriMap()
         {
+            Table("openid_client_redirect_uri");
+
             Id(p => p.ID);
 
             Property(p => p.RedirectUri, map =>

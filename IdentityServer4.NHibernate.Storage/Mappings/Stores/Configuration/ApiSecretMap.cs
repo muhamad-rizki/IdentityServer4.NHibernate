@@ -7,6 +7,8 @@ namespace IdentityServer4.NHibernate.Mappings.Stores.Configuration
     {
         public ApiSecretMap()
         {
+            Table("openid_api_secret");
+
             Id(p => p.ID);
 
             Property(p => p.Description, map => map.Length(1000));

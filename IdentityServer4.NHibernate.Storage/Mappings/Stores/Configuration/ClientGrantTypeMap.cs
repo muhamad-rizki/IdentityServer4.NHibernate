@@ -7,6 +7,8 @@ namespace IdentityServer4.NHibernate.Mappings.Stores.Configuration
     {
         public ClientGrantTypeMap()
         {
+            Table("openid_client_grant_type");
+
             Id(p => p.ID);
 
             Property(p => p.GrantType, map => 

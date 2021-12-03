@@ -7,6 +7,8 @@ namespace IdentityServer4.NHibernate.Mappings.Stores.Configuration
     {
         public ClientIdPRestrictionMap()
         {
+            Table("openid_client_idp_restriction");
+
             Id(p => p.ID);
 
             Property(p => p.Provider, map =>

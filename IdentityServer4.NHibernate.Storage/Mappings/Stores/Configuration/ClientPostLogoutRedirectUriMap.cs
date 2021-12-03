@@ -7,6 +7,8 @@ namespace IdentityServer4.NHibernate.Mappings.Stores.Configuration
     {
         public ClientPostLogoutRedirectUriMap()
         {
+            Table("openid_client_post_logout_redirect_uri");
+
             Id(p => p.ID);
 
             Property(p => p.PostLogoutRedirectUri, map => 

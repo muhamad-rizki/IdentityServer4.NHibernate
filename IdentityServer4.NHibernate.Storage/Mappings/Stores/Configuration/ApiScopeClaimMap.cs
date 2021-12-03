@@ -7,6 +7,8 @@ namespace IdentityServer4.NHibernate.Mappings.Stores.Configuration
     {
         public ApiScopeClaimMap()
         {
+            Table("openid_api_scope_claim");
+
             Id(p => p.ID);
 
             Property(p => p.Type, map => 

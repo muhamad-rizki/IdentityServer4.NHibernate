@@ -8,6 +8,8 @@ namespace IdentityServer4.NHibernate.Mappings.Stores.Configuration
     {
         public ApiResourceMap()
         {
+            Table("openid_api_resource");
+
             Id(p => p.ID);
 
             Property(p => p.Name, map => 

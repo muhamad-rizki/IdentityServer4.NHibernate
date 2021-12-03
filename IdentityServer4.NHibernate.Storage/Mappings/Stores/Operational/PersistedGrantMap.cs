@@ -8,6 +8,8 @@ namespace IdentityServer4.NHibernate.Mappings.Stores.Operational
     {
         public PersistedGrantMap()
         {
+            Table("openid_persisted_grant");
+
             Id(p => p.ID, map =>
             {
                 map.Column("Key");
